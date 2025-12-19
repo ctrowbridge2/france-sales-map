@@ -112,7 +112,7 @@ function App() {
 
   const loadMap = async (data) => {
     try {
-      const geojson = await d3.json('/departements.geojson');
+      const geojson = await d3.json('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson');
       
       const svg = d3.select(svgRef.current);
       svg.selectAll('*').remove();
