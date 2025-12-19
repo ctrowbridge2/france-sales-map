@@ -47,7 +47,7 @@ function App() {
     }));
     setSalesData(parsedData);
     loadMap(parsedData);
-  }, []);
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getDepartmentColor = (code, data) => {
     for (const rep of data) {
